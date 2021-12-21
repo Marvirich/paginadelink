@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url('https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/02/construcao-civil1.jpg');
+    background-image: url('https://constructapp.io/wp-content/uploads/2017/08/especializacao-em-engenharia-civil-1024x576.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,8 +15,9 @@ body{
 
 header{
     background-color: #00000091;
-    height: 230px;
+    height: 240px;
     width: 100%;
+    box-shadow: 2px 2px 15px #00000065;
 }
 header>img{
     padding-left: 15px;
@@ -25,6 +26,7 @@ header>img{
 }
 header div h1{
     color: white;
+    margin: auto;
 }
 header div p{
     color: white;
@@ -36,18 +38,6 @@ header>div{
 div>h1{
     font-size: 30px;
     padding: 10px 0px;
-}
-nav{
-    background-color: #1E2F74;
-    height: 20px;
-}
-ul>li{
-    display: inline;
-    padding: 2px 20px;
-}
-li>a{
-    text-decoration: none;
-    color: white;
 }
 a:hover{
     text-decoration: underline;
@@ -62,6 +52,8 @@ main{
     margin: 7px auto;
     padding: 15px;
     border-radius: 10px;
+    height: 100%;
+    box-shadow: 2px 2px 20px #00000065;
 }
 main>p{
     color: black;
@@ -79,7 +71,7 @@ footer{
 }
 p>a{
     text-decoration: none;
-    color: blanchedalmond;
+    color: white;
 }
 
 #exteno{
