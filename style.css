@@ -14,15 +14,18 @@ body{
 }
 
 header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     background-color: #00000091;
-    height: 240px;
+    height: 200px;
     width: 100%;
     box-shadow: 2px 2px 15px #00000065;
 }
 header>img{
     padding-left: 15px;
     padding-top: 10px;
-    display: inline;
 }
 header div h1{
     color: white;
@@ -41,7 +44,7 @@ div>h1{
 }
 a:hover{
     text-decoration: underline;
-    color: gray;
+    color: red;
     padding: 2px;
     border-radius: 7px;
 }
@@ -50,7 +53,7 @@ main{
     max-width: 700px;
     min-width: 150px;
     margin: 7px auto;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     height: 100%;
     box-shadow: 2px 2px 20px #00000065;
