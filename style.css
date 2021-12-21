@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/02/construcao-civil1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    background-color: #00000091;
+    height: 230px;
+    width: 100%;
+}
+header>img{
+    padding-left: 15px;
+    padding-top: 10px;
+    display: inline;
+}
+header div h1{
+    color: white;
+}
+header div p{
+    color: white;
+}
+header>div{
+    text-align: center;
+    display: inline;
+}
+div>h1{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+nav{
+    background-color: #1E2F74;
+    height: 20px;
+}
+ul>li{
+    display: inline;
+    padding: 2px 20px;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: white;
+    padding: 2px;
+    border-radius: 7px;
+}
+main{
+    background-color: #ffffffa4;
+    max-width: 800px;
+    min-width: 320px;
+    margin: 7px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+main>p{
+    color: black;
+    width: 100%;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 1em;
+    padding: 7px 0px;
+    align-items: flex-end;
+}
+p>a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+#exteno{
+    color:black;
+
+}
+
+.contato {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    width: 150px;
+}
+
+.contato:hover{
+    background-color: transparent;
+}
