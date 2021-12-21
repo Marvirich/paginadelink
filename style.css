@@ -47,7 +47,7 @@ a:hover{
 }
 main{
     background-color: #ffffffa4;
-    max-width: 800px;
+    max-width: 700px;
     min-width: 150px;
     margin: 7px auto;
     padding: 15px;
@@ -63,7 +63,7 @@ main>p{
 }
 footer{
     background-color: black;
-    color: blanchedalmond;
+    color: white;
     text-align: center;
     font-size: 1em;
     padding: 7px 0px;
