@@ -58,14 +58,13 @@ a:hover{
 main{
     background-color: #ffffffa4;
     max-width: 800px;
-    min-width: 290px;
+    min-width: 150px;
     margin: 7px auto;
     padding: 15px;
     border-radius: 10px;
 }
 main>p{
     color: black;
-    width: 100%;
     text-indent: 30px;
     text-align: justify;
     font-size: 20px;
