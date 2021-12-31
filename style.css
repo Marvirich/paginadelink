@@ -44,7 +44,7 @@ div>h1{
 }
 a:hover{
     text-decoration: underline;
-    color: red;
+    color: blue;
     padding: 2px;
     border-radius: 7px;
 }
@@ -82,8 +82,15 @@ p>a{
 
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .contato {
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: black;
     padding: 10px 20px;
