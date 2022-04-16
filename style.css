@@ -64,6 +64,16 @@ main>p{
     text-align: justify;
     font-size: 20px;
 }
+
+main div img{
+    width: 150px;
+}
+main div{
+    padding-top: 20px;
+}
+.cont div img{
+    width: 50px;
+}
 footer{
     background-color: black;
     color: white;
