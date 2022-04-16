@@ -85,7 +85,7 @@ main div{
       background-color: green;
     }
     main div img{
-        width: 100px;
+        width: 100%;
     }
     .cont div img{
         width: 25px;
