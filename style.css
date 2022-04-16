@@ -84,6 +84,12 @@ main div{
     main{
       background-color: green;
     }
+    main div img{
+        width: 125px;
+    }
+    .cont div img{
+        width: 50px;
+    }
     iframe{
         width:330px;
         height: 200px;
