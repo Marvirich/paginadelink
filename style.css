@@ -66,7 +66,7 @@ main>p{
 }
 
 main div img{
-    width: 150px;
+    width: 250px;
 }
 main div{
     padding-top: 20px;
@@ -74,6 +74,22 @@ main div{
 .cont div img{
     width: 50px;
 }
+@media only screen and (max-width: 340px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+    }
+    main{
+      background-color: green;
+    }
+    iframe{
+        width:330px;
+        height: 200px;
+        margin: auto;
+    }
+  }
 footer{
     background-color: black;
     color: white;
