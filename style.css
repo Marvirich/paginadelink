@@ -32,10 +32,6 @@ header{
     height: 200px;
     width: 100%;
     box-shadow: 2px 2px 15px #00000065;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 header>img{
     padding-left: 15px;
@@ -71,8 +67,6 @@ main{
     border-radius: 10px;
     height: 100%;
     box-shadow: 2px 2px 20px #00000065;
-    position: relative;
-    top: 200px;
 }
 main>p{
     color: black;
@@ -107,8 +101,6 @@ footer{
     font-size: 1em;
     padding: 7px 0px;
     align-items: flex-end;
-    position: relative;
-    top: 200px;
 }
 p>a{
     text-decoration: none;
@@ -148,8 +140,6 @@ p>a{
     }
     main{
         background-color: #ffffffa4;
-        position: relative;
-        top: 250px;
     }
     main div img{
         width: 100%;
@@ -161,9 +151,5 @@ p>a{
         width:330px;
         height: 200px;
         margin: auto;
-    }
-    footer{
-        position: relative;
-        top: 250px; 
     }
 }
