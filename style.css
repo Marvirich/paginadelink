@@ -65,11 +65,17 @@ main>p{
     font-size: 20px;
 }
 
-main div img{
-    width: 250px;
+.imagem img{
+    width: 290px;
+    padding-right: 15px;
+    padding-bottom: 20px;
 }
 main div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 20px;
+    width: 100%;
 }
 .cont div img{
     width: 50px;
@@ -88,7 +94,7 @@ main div{
         width: 100%;
     }
     .cont div img{
-        width: 25px;
+        width: 35px;
     }
     iframe{
         width:330px;
@@ -96,6 +102,9 @@ main div{
         margin: auto;
     }
   }
+iframe{
+    padding-top: 10px;
+}
 footer{
     background-color: black;
     color: white;
