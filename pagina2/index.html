@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="alinhahorizontal">
+        <img width="80px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAACcnJzl5eUXFxcLCwt4eHifn5/19fW3t7fb29uJiYl8fHzh4eHT09M+Pj6VlZVUVFQ5OTlERERcXFwRERHs7OzNzc3y8vKrq6vFxcWlpaUcHBy/v78vLy9jY2MiIiJvb29OTk6FhYVxcXEyMjJISEgoKCiPj49APyNRAAAK40lEQVR4nO2d2YKiOhCGVRQBFTd2RMT9/Z/wqAQIlQXs1kCfqe9qBhHym6RSqVTSgwGCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIEjP8Sy7QAuabg688uaFp6J0v0SLwuldX28L0vkqNn2Df7Nhm9Opfl4WNzvn+zSM+izTik/OZjyEHLbZzGTKHZiz7HpjbnY36Sm2uih9I8bUWe6YAlMqI/puXz8ehDePl860sXWrRsvE6giT/bS4O7y4TXfvMrtLPQDDXjcVmDB6NFZj1PLmraj/KsfPWhb5WTXTkO17QpxeaLSmrG35HKfujU5y/KK+B1ez22rU7o0G5rfs5osOBfrOt/U9OXZnVX3xkPZR3KQjgbEafU9W/3eBD4kd2JtQpcAOJBrSGnS311Q/Z8frpkXZJ5frOjuf9e1S5sq5K8WeaigeJZyVGT0mhp73nCZG5motKfhk/bjZt63HzY9pYpRM04no1nGsVGCyF5Rja1pavT0ZXnIRlXofeqDxeZYpGoFupkKB1pJfiHTBa0onkcDhcM6537B0/s0HdR6cx/+Zdf7sXDqV4Dc9LeO27Juyrrjivd7x+TdHogadIxjM7TWvQ6bf01Qj4bx7PxNYcy2VChxuNMFbVrzeq6YrGpwJ3lH46sbp7kz0Td6s5Sb6PT7KjH2xI/SNrWbXVdC6H9/lVP/8O5pqeOxrz+JfNmsUONwKv6yx3z6omGdYMCiTik2c3yxwOAzF74KvOtpqnLe6xqWkb7BeWxwzA4G4EgdGzdwsFU4UzXUZnLlJYtSs1X1Mg+7w2mQkeVPpHbpXSV1/gzAldSEz4IxnkD0b2RlelQ1zdv5Tuk6sPEZsxNnz1UJj/8CG48r+5XcZ0AeQepzT5x1O2Mlqhhevh0fZL8s4pERJBK/fJQ8JsuE2VjIM8liEsr6vQUvoFJ/MwQdHmU9tmd3HTAWYsJGWNcH4ASonRh8EOuiUPwIjBPc+RO/fZgEtKdWZ4ART2kx7SwIaKT3bNeCgKHRO+4wJRNRWSBPQE/9kRwTd8FpriHDayAtn9B2oARgT0EyPfc5PEGABrxt4lSAc6XY2pv8cv75wuo/qH9vb+g/Q5RLaDwGuWQokGKARd7W89AuAQh2O6WCGMeU+pNeAlRvGuQZuuWyO2E/gmM6sAIKA1rmLQv4KqJBphXHdEqkK9n6ORoUhKuw7/55Cxlb+/X4IFiyabKneRSF/B4iVMjE5EKtRu4b9EYBPk8HJQ1b/XHG49xOAJYsriMp5IBDXp3zZloBw8Bi41hFYAP2DcwvrKm2GwBCpWfr8LAFwrdO6BmBo0j84x4cx0V0tnOaDcOLoLwZMTZAdXRsPYFbcH5wAP0wN6IhbqiHCMNX+D5rSAbv+QtUTXH0SJBv1nSmQUa1mB3CR9A+O908iuIpf6oAJDLdI9pxO8aVFy4CQIbluwB0auizibVud2dnguVlGZiJCRkl+HS67uTK32z4MHb+bbhq9kiSXkp/f2EIpL2PDJNkcJS5b8FqjSxXl0dD4K5KLIcvDYpLato8qXzDJqbJsBzKRPswitRr9WWVFJE2M6XCPSZTBJJvsJVVYeQaXuUJzZOm0ldxJ1v7ggDGc6DqTEyVpBbX1m0umah31DFY392KXy4BqhpzEWHFPhvny47mSpsrmqk3EA3aL1D1xKw/Zn+P4DUVtCi1MyQqyJoFL0XsM3sZGNc4PL5V+LkqmsBs2lbiivmVxMnWH2bc01dF4myqviaAaY+EekReiNaeEt7V4p2rkj3h7Bdw5vzYCwe4JUin8Mtsz7tZbdbNIfnr6Zs514RaSfbT8TCHrxN+xonCPXgCnfoTbmmcJbOGuoA1vEPdTwQ4NQX1/B4mJdMx6hwwSOH5WTODNRsJ4PCWp2nAck85Os3NWYfwknDVvFJ6sz2Hse1YY3x3ZVn3lqW9SiV9gq36SDCO+32XTRWqf/eWzBmg62rAu2if4eZyu0k89yd7JT6J3uKgxajxn5gN0u3j6fZN67Dx9eNZmR/qP2c96kFrrz98532QJ428ydno/VmwM8yyfIVVcVr4dC91USNbx2TQUXtRq4NiNXuFrK251Joqe9Gq5Jlisms5/uoTlWQSa2egQnZpP61OPpYsb6/gOxjRtJKlIJ+lN84R4sXO57ahBcuLu9tss5NeHeb7uDy71s7i7294Z9X61NIjCk66nDzJ9vgrl0XjDDkf6/Py8e67P4ugPJp0gCIL8yxiatnjAeBae9gSMAMHrIjvo5Tc/4D1eY55kwJvL79NQr1nwH96GRXLKJ0W31Kwvoc+H47ELN9CvnhcPTDTYOLrjJ+6BGROTG/mIXrfw94+L7rUaE58vg9Db/F4fD3/g/3gmPa8dz+g5aB7tZhQ+YdPxS+eGicdXG0ypKKH/cm+WVVCG68+fqkrML7yvkDlx9TKtHvJSOGmlkNqedoWlMEtfjUrm8F01ChPOpL1qGW8opI48G8MWXCmk9iEoUhhxff5S4hsK6R0XKSgGpZBKBlOiUHTsUSGxvUKfbgsH8A1a4a2YTChRWKbQH5yVb9uRvi2KEr2rkOQIk9kRyKKgFQ6dQKownY4oVpRp+onCIkNnXWjwilPFyLFjrRWSdY3bOQ/+X+orKzWFRVKUQKE4O+EHCoskpowaRkkSpbt4TyEZD9IFyTioH8+ZK7yQpQ+SkaNCIWlZTs1PeCX0OiSu11Yhae6TVXF6xKa29pArdEISr1lrqhQS4wBm2udHNyo05wpHC4tiMWcV2vmTltrAyPJ/1oLzucL1ojgX62SoUUiStOCuZG9n1sfD4W1T48AqJIu/z+29JHerdmwCUagNiPyXlyRQKM6be18hSTCX+bKCHAWosDi37lVa0hRpW1PU4cArYuCeUKFbc0vpt7yvMO9Pa1kktqVCUoXr13+IgV5SRSkVDiJiVXctx0PaVX9fYZ4nI00AbKewyEnMq604S5IKE1YKy62WI3UKpccut1NIlk5v5L8ksXvNVTggDrrr2z2qw4lbYwIUBsTnLqxgQEpX2Wha4YLcvY53X1eY/9bSs2Ly0eJu+xS2DhSOcsm38t2kTquDE2iFhXPgbtoopKea7ysktrRZYcOIT+zM2Ckg4+y+tNI1hUbRFfkz4CymmNLT8fcVCsbDYFu9tI1C8WHf5ZNrCuvHgnXh02yp/YFtFIoXE8sOUFdY2zP7XYWkR2wC5qJutVYIjzGjKA/yBAoH02q96stzC9K+jpVbE5j5y/deW4XMAaUURQYlVFg4r19XWMbA1sUf2fJPZEJ1DVoqFKeTDqvNGVDhYFFW/NsK3xI4MIo+tMvupmmOymxdt/XsiczANrMadxI8IAezMQqrTZeMQuc+A8+qKzyBjxuyGK0qH+92ozpU4eg0KtRyP3tyN+oQA3vwBQrLxt0Up3k8u64Q0pQsnXAX40+tbSmpiyVczQ1S+qfiKAyWbRXu5Aobj5ziJXJVu8uaFBanN7NnlZDjWnYLgcKBNlGkcKDBxOwl1debFJIdNWM2XzIg7T8UKSSzLAUKH+/PqnD15Hqiy8E1b/fqycRn4B2oU2wdfdqa3GaDrZXe6+GXSqEorV2usNWmBSNZ6cfXn5WcgaOCk1fQEtSQv3pefNmQVR7U5KW8ennc89URrdc/YRaK9byDOvY5GXEpnacV9+O2yYz5HxNd9DZ1B0EQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQpAv+A7MYrIl63y3GAAAAAElFTkSuQmCC" alt="">
+        <div class="alinhahorizontal fundopesquisa">
+            <input  type="search" name="" id="pesquisa">
+            <label for="pesquisa"><img width="25px" src="imagem/search_FILL0_wght400_GRAD0_opsz48.svg" alt=""></label>
+        </div>
+    </header>
+    <main class="container">
+        <div class="pag">
+            <p class="fontegrande">Formas de Pagamento</p>
+            <div class="alinhahorizontal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo%E2%80%94pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.svg" alt="pix">
+                <img src="https://designe.com.br/wp-content/uploads/2020/07/tutorial-como-criar-um-icone-de-cartao-de-credito-no-illustrator-designe.png" alt="cartão de Credito">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkT5i5CwvG_0jhhgYGqF1CoooXic0EdgDPQDKwrsw5KCgd2RF01C7hy0KgTDBHGdzUo4&usqp=CAU" alt="boleto bancario">
+            </div>
+
+        </div>
+        <div class="conteudo">
+            <p class="fontegrande">Oferta do Dia</p>
+            <div class="alinhahorizontal wrap">
+                <section class="containerpro">
+                    <img class="produto" src="https://images-americanas.b2w.io/produtos/4627911431/imagens/pijama-adulto-free-fire-pjmc/4627911431_1_large.jpg" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto</p>
+                        <p class="precoproduto">R$ 30,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_QMESvU-GDW8UoO2JlJxYcP3DWAy7kR_03Q&usqp=CAU" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto</p>
+                        <p class="precoproduto">R$ 30,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCxdu_7-FDyge71FQ0YHNg5aTa5zUmOBshLQ&usqp=CAU" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto</p>
+                        <p class="precoproduto">R$ 30,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEFARwz2m487D6Lza-zmjdYAkSZiGXL5nqxw&usqp=CAU" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto</p>
+                        <p class="precoproduto">R$ 30,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDKThQxzzCBOZNjwAnbSrYinZlnAchomkgdg&usqp=CAU" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto</p>
+                        <p class="precoproduto">R$ 30,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrn03oOsKMuE807xHoGUcxx5nokb79qVRiYA&usqp=CAU" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto</p>
+                        <p class="precoproduto">R$ 30,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://a-static.mlcdn.com.br/1500x1500/kit-4-conjunto-de-roupa-infantil-camiseta-short-menina-kids-centra-kids/centralkids/11346532189/7a421ada53b3b60ef23ea8031f0363d6.jpg" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto</p>
+                        <p class="precoproduto">R$ 30,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://imgs.extra.com.br/1533262935/1xg.jpg?imwidth=292" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto</p>
+                        <p class="precoproduto">R$ 30,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+        <div class="conteudo">
+            <p class="fontegrande">Mais Vendidos</p>
+            <div class="alinhahorizontal wrap">
+                <section class="containerpro">
+                    <img class="produto" src="https://img.elo7.com.br/product/original/3A98FBA/roupa-free-fire-angelical-free-fire-angelical.jpg" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto 1</p>
+                        <p class="precoproduto">R$ 60,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://cdn.shopify.com/s/files/1/0626/1209/products/0ddeefe4-4a50-4acc-9e1e-5568fb468a53_kit-joss--4-camisetas-basicas---masculina_1_365x365.jpg?v=1571439318" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto 1</p>
+                        <p class="precoproduto">R$ 60,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd5964kbefNNUvERwl24DTqQnDyE__Rax4kw&usqp=CAU" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto 1</p>
+                        <p class="precoproduto">R$ 60,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+                <section class="containerpro">
+                    <img class="produto" src="https://a-static.mlcdn.com.br/618x463/kit-lote-3-conjunto-infantil-menino-roupa-infantil-masculino-verao-4-6-8-10-anos-nacional/bcbabyshop2/10942165143/38749085bbc973fcf8d1f3454f5f9eb2.jpg" alt="">
+                    <div class="alinhavertical">
+                        <p class="nomeproduto">produto 1</p>
+                        <p class="precoproduto">R$ 60,00</p>
+                        <a class="botaoproduto" href="#">adicionar no carrinho</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Criado por Marvirich</p>
+    </footer>
+</body>
+</html>
