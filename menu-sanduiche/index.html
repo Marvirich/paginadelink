@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,27 +16,25 @@
         #show{
             position: absolute;
             right: 0;
-            z-index: 2;
+            z-index: 2;/*posição no eixo z*/
             height: 70px;
             cursor: pointer;
         }
         #hide{
             cursor: pointer;
         }
-        .menus{
-            display: none;/**/
+        .menus{/**/
             background-color: rgb(12, 70, 231);/**/
             border-radius: 10px;/*bordas arredondadas*/
-            border: 2px solid #a1a1a1d7;
-            height: 98vh;
-            width: 300px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: 3;
+            border: 2px solid #a1a1a1d7;/*borda*/
+            height: 98vh;/**/
+            width: 300px;/**/
+            position: absolute;/*posição absoluta, pq apresenta so um elemento*/
+            right: 0;/**/
+            top: 0;/**/
+            z-index: 3;/*posição no eixo z*/
         }
         nav{
-            list-style: none;/**/
             height: 100%;
             width: 100%;
         }
@@ -49,7 +47,7 @@
             text-align: center;
             text-decoration: none;/*tipo de decoração do ancora*/
             width: 100%;
-            padding: 20px 0px;
+            padding: 20px 0px;/*espaçamento interno da tag*/
             color: #fff;
         }
         .menus a:hover{
@@ -62,21 +60,21 @@
 <body>
     <!-- menu sanduiche -->
     <div class="alinhamento_vertical">    
-        <span id="show" class="material-symbols-outlined">menu</span>
+        <span id="show" class="material-symbols-outlined">menu</span><!--item pode ser trocado por img-->
         <script>
             $(document).ready(function(){
                 $("#hide").click(function(){
-                    $(".menus").hide();
+                    $(".menus").hide(); //função de esconder item
                 });
                 $("#show").click(function(){
-                    $(".menus").show();
+                    $(".menus").show(); // função de aparecer item
                 });
             });
         </script>
         <div class="menus">
-            <nav class="alinhamento_vertical ajuste_de_elemento">
+            <nav class="alinhamento_vertical">
                 <div>
-                    <span id="hide" class="material-symbols-outlined">close</span>
+                    <span id="hide" class="material-symbols-outlined">close</span><!--item pode ser trocado por img-->
                     <a href="#">cadastrar</a>
                     <a href="#">cadastrar</a>
                     <a href="#">cadastrar</a>
@@ -84,6 +82,7 @@
                 <a href="#">sair</a>
             </nav>
         </div>
+        <!-- fim do menu sanduiche -->
     </div>
 </body>
 </html>
