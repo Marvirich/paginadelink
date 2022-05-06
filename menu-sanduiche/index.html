@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alinhamento_vertical{
+            display: flex;/**/
+            flex-direction: column;/**/
+            justify-content: space-between;
+        }
+        .container {
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            padding: 10px;
+        }
+        .bar1, .bar2, .bar3 {
+            width: 30px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        .change .bar2 {
+            opacity: 0;
+        }
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+        input[type="checkbox"]{
+            display: none;/**/
+            z-index: 3;/*como se o elemento estivesse em 3 dimensões*/
+        }
+        .menus{
+            display: none;/**/
+            background-color: rgb(12, 70, 231);/**/
+            border-radius: 10px;/*bordas arredondadas*/
+            border: 2px solid #a1a1a1d7;
+            height: 100vh;
+            width: 300px;
+        }
+        label{
+            z-index: 3;/**/
+        }
+        input[type="checkbox"]:checked ~ .menus{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;/**/
+            position: absolute;/**/
+            height: 97vh;/**/
+            top:0;
+            right: 0;
+        }
+        nav{
+            list-style: none;/**/
+            height: 100%;
+            width: 100%;
+        }
+        .menus div{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .menus nav a, .menus nav div a {
+            text-align: center;
+            text-decoration: none;/*tipo de decoração do ancora*/
+            width: 100%;
+            padding: 20px 0px;
+            color: #fff;
+        }
+        .menus a:hover{
+            color: #333;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- menu sanduiche -->
+    <div class="menu_mestre alinhamento_vertical ajuste_de_elemento2">
+        <input type="checkbox" name="menu" id="menu">
+        <label for="menu">
+            <div class="container" onclick="mudar_menu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </label>
+        <script>
+            function mudar_menu(x) {
+              x.classList.toggle("change");
+            }
+        </script>
+        <div class="menus">
+            <nav class="alinhamento_vertical ajuste_de_elemento">
+                <div>
+                    <a href="#">cadastrar</a>
+                    <a href="#">cadastrar</a>
+                    <a href="#">cadastrar</a>
+                </div>
+                <a href="#">sair</a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
