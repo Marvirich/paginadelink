@@ -5,60 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         .alinhamento_vertical{
             display: flex;/**/
             flex-direction: column;/**/
             justify-content: space-between;
         }
-        .container {
-            display: inline-block;
-            cursor: pointer;
+        #show{
             position: absolute;
             right: 0;
-            padding: 10px;
+            z-index: 2;
+            height: 70px;
+            cursor: pointer;
         }
-        .bar1, .bar2, .bar3 {
-            width: 30px;
-            height: 5px;
-            background-color: #333;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-        .change .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-        }
-        .change .bar2 {
-            opacity: 0;
-        }
-        .change .bar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
-        }
-        input[type="checkbox"]{
-            display: none;/**/
-            z-index: 3;/*como se o elemento estivesse em 3 dimensões*/
+        #hide{
+            cursor: pointer;
         }
         .menus{
             display: none;/**/
             background-color: rgb(12, 70, 231);/**/
             border-radius: 10px;/*bordas arredondadas*/
             border: 2px solid #a1a1a1d7;
-            height: 100vh;
+            height: 98vh;
             width: 300px;
-        }
-        label{
-            z-index: 3;/**/
-        }
-        input[type="checkbox"]:checked ~ .menus{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;/**/
-            position: absolute;/**/
-            height: 97vh;/**/
-            top:0;
+            position: absolute;
             right: 0;
+            top: 0;
+            z-index: 3;
         }
         nav{
             list-style: none;/**/
@@ -86,23 +61,22 @@
 </head>
 <body>
     <!-- menu sanduiche -->
-    <div class="menu_mestre alinhamento_vertical ajuste_de_elemento2">
-        <input type="checkbox" name="menu" id="menu">
-        <label for="menu">
-            <div class="container" onclick="mudar_menu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </label>
+    <div class="alinhamento_vertical">    
+        <span id="show" class="material-symbols-outlined">menu</span>
         <script>
-            function mudar_menu(x) {
-              x.classList.toggle("change");
-            }
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $(".menus").hide();
+                });
+                $("#show").click(function(){
+                    $(".menus").show();
+                });
+            });
         </script>
         <div class="menus">
             <nav class="alinhamento_vertical ajuste_de_elemento">
                 <div>
+                    <span id="hide" class="material-symbols-outlined">close</span>
                     <a href="#">cadastrar</a>
                     <a href="#">cadastrar</a>
                     <a href="#">cadastrar</a>
