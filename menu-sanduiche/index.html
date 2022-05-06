@@ -14,19 +14,17 @@
             justify-content: space-between;
         }
         #show{
-            position: absolute;
+            position: absolute;/*posição absoluta, pq apresenta so um elemento*/
             right: 0;
             z-index: 2;/*posição no eixo z*/
-            height: 70px;
+        }
+        #hide,#show{
             cursor: pointer;
         }
-        #hide{
-            cursor: pointer;
-        }
-        .menus{/**/
-            background-color: rgb(12, 70, 231);/**/
+        .menus{
+            background-color: #e70c29;/**/
             border-radius: 10px;/*bordas arredondadas*/
-            border: 2px solid #a1a1a1d7;/*borda*/
+            border: 2px solid #a1a1a16b;/*borda*/
             height: 98vh;/**/
             width: 300px;/**/
             position: absolute;/*posição absoluta, pq apresenta so um elemento*/
@@ -75,9 +73,9 @@
             <nav class="alinhamento_vertical">
                 <div>
                     <span id="hide" class="material-symbols-outlined">close</span><!--item pode ser trocado por img-->
-                    <a href="#">cadastrar</a>
-                    <a href="#">cadastrar</a>
-                    <a href="#">cadastrar</a>
+                    <a href="#">Link-1</a>
+                    <a href="#">Link-2</a>
+                    <a href="#">Link-3</a>
                 </div>
                 <a href="#">sair</a>
             </nav>
